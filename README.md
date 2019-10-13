@@ -1,3 +1,3 @@
 # Website
 
-learmy.netlify.com
+https://learmy.netlify.com
