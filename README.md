@@ -1,2 +1,3 @@
-# learmy
-astronomy made simple
+# Website
+
+learmy.netlify.com
