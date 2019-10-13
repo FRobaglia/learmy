@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif';
+  margin: 8px 16px;
+  color: $black;
+}
+
+strong, header, h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans';
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'PT Serif';
+  font-size: 40px;
+}
+
+h3 {
+ font-size: 32px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+p {
+  line-height: 120%;
+}
