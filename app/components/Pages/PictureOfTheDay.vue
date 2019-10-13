@@ -9,8 +9,8 @@
 
 
 <script>
-import Header from '../Components/Header';
-import Picture from '../Components/Picture';
+import Header from '../Comps/Header';
+import Picture from '../Comps/Picture';
 
 export default {
   data() {
