@@ -5,7 +5,8 @@
 body {
   font-family: 'PT Serif';
   margin: 8px 16px;
-  color: $black;
+  color: var(--black);
+  background: var(--white);
 }
 
 strong, header, h1, h2, h3, h4, h5, h6 {
@@ -20,6 +21,11 @@ h2 {
 
 h3 {
  font-size: 32px;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
 }
 
 main {

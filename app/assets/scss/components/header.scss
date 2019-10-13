@@ -22,14 +22,13 @@ header {
 
     .light-dark-mode {
       cursor: pointer;
-      margin-top: 14px;
-      margin-left: 10px;
+      margin-top: -5px;
       width: 32px;
       height: 32px;
       transition: transform .6s;
 
       &:hover {
-        transform: rotate(180deg);
+        transform: rotate(130deg);
       }
     }
 
@@ -41,7 +40,7 @@ header {
 
         li {
           line-height: 130%;
-          margin: 0px 40px;
+          margin: 0px 30px;
         }
       }
     }
@@ -55,9 +54,15 @@ header {
       margin: 0 auto;
       padding: 20px;
     }
+    .light-dark-mode {
+      position: fixed;
+      margin: initial;
+      top: 16px;
+      right: 8px;
+    }
     nav {
       padding-bottom: 30px;
-      border-bottom: 1px solid black;;
+      border-bottom: 1px solid var(--black);;
       ul {
         text-align: center;
         font-size: 24px;
@@ -67,8 +72,12 @@ header {
           padding: 16px;
 
           &:nth-child(odd), &:nth-child(odd) a {
-            color: $white;
-            background: $black;
+            color: var(--white);
+            background: var(--black);
+          }
+
+          &:first-child {
+            padding: 0 !important;
           }
         }
       }

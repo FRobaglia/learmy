@@ -5,9 +5,9 @@
         <strong>learmy</strong>
         <p>astronomy made simple.</p>
       </a>
-      <img @click="switchMode" class="light-dark-mode" :src="icon" alt="Switch Light/Dark Mode">
       <nav>
         <ul>
+          <li> <img ref="mode" @click="switchMode" class="light-dark-mode" :src="icons[darkMode]" alt="Switch Light/Dark Mode"> </li>
           <li> <a href=""> EXOPLANETS </a> </li>
           <li> <a href=""> BLACK HOLES </a> </li>
           <li> <a href=""> THE SOLAR SYSTEM </a> </li>
@@ -22,23 +22,41 @@
 
 <script>
 
-import lightModeIcon from '../../assets/images/light.svg';
-import darkModeIcon from '../../assets/images/dark.svg';
+import lightMode from '../../assets/images/light.svg';
+import darkMode from '../../assets/images/dark.svg';
 
 
 export default {
   data() {
     return {
-      icon: lightModeIcon
+      icons: [darkMode, lightMode],
+      darkMode: localStorage.getItem('darkMode') === '1' ? 1 : 0
     };
   },
   mounted() {
-
+    let root = document.documentElement
+      if (this.darkMode) {
+        root.style.setProperty('--white', "#111");
+        root.style.setProperty('--black', "whitesmoke");
+      } else {
+        root.style.setProperty('--white', "whitesmoke");
+        root.style.setProperty('--black', "#111");
+      }
   },
   methods: {
     switchMode() {
-      this.icon === lightModeIcon ? this.icon = darkModeIcon : this.icon = lightModeIcon
-    }
+      let root = document.documentElement
+      if (!this.darkMode) {
+        this.darkMode = 1;
+        root.style.setProperty('--white', "#111");
+        root.style.setProperty('--black', "whitesmoke");
+      } else {
+        this.darkMode = 0;
+        root.style.setProperty('--white', "whitesmoke");
+        root.style.setProperty('--black', "#111");
+      }
+      localStorage.setItem('darkMode', this.darkMode)
+    },
   }
 };
 </script>
