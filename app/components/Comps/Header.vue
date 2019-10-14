@@ -7,12 +7,12 @@
       </a>
       <nav>
         <ul>
-          <li> <img ref="mode" @click="switchMode" class="light-dark-mode" :src="icons[darkMode]" alt="Switch Light/Dark Mode"> </li>
-          <li> <a href=""> EXOPLANETS </a> </li>
-          <li> <a href=""> ASTEROIDS </a> </li>
-          <li> <a href=""> BLACK HOLES </a> </li>
-          <li> <a href=""> THE SOLAR SYSTEM </a> </li>
-          <li> <a href=""> DISTANCES IN SPACE </a> </li>
+          <li> <img @click="switchMode" class="light-dark-mode" :src="icons[darkMode]" alt="Switch Light/Dark Mode"> </li>
+          <li> <router-link to=""> EXOPLANETS </router-link> </li>
+          <li> <router-link to=""> ASTEROIDS </router-link> </li>
+          <li> <router-link to=""> BLACK HOLES </router-link> </li>
+          <li> <router-link to=""> THE SOLAR SYSTEM </router-link> </li>
+          <li> <router-link to=""> DISTANCES IN SPACE </router-link> </li>
         </ul>
       </nav>
     </div>

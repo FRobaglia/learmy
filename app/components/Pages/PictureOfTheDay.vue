@@ -21,7 +21,8 @@ export default {
     return {
       dates: [],
       oldestDate: null,
-      readyToLoad: true
+      readyToLoad: true,
+      imageToLoad: 5,
     };
   },
   mounted() {
@@ -35,7 +36,7 @@ export default {
   methods: {
 
     loadPictures() {
-      for (let i = 0; i <= 5; i++) {
+      for (let i = 0; i <= this.imageToLoad; i++) {
         let date = this.oldestDate;
         date.setDate(date.getDate() - 1);
         date = this.formatDate(date);
