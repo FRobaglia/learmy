@@ -10,9 +10,13 @@
 
 <script>
 import Header from '../Comps/Header';
-import Picture from '../Comps/Picture';
+// import Picture from '../Comps/Picture';
 
 export default {
+  name: "PictureOfTheDay",
+  components: {
+    Header
+  },
   data() {
     return {
       dates: [],
@@ -67,9 +71,6 @@ export default {
       return [year, month, day].join('-');
     }
 
-  },
-  components: {
-    Header, Picture
   }
 };
 </script>
