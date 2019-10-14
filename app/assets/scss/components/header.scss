@@ -1,3 +1,9 @@
+@keyframes rotate {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
 header {
   .wrapper {
     max-width: 1920px;
@@ -30,10 +36,9 @@ header {
       margin-top: -5px;
       width: 32px;
       height: 32px;
-      transition: transform .6s;
 
       &:hover {
-        transform: rotate(130deg);
+        animation: rotate linear 1.5s infinite;
       }
     }
 
