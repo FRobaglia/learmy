@@ -9,8 +9,8 @@
 
 
 <script>
-import Header from '../Comps/Header.vue';
-import Picture from '../Comps/Picture.vue';
+import Header from '../Comps/Header';
+import Picture from '../Comps/Picture';
 
 export default {
   data() {
