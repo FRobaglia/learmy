@@ -2,7 +2,7 @@
   <div class="page-container">  
     <Header> </Header>
     <main>
-      <Picture v-for="date in dates" :date="date" :key="date"> </Picture>
+      <Pic v-for="date in dates" :date="date" :key="date"> </Pic>
     </main>
   </div>
 </template>
