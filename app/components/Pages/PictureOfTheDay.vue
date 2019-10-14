@@ -2,7 +2,10 @@
   <div class="page-container">  
     <Header> </Header>
     <main>
+      <Introduction :introduction="introduction"> </Introduction>
+      <section class="pictures">
       <Pic v-for="date in dates" :date="date" :key="date"> </Pic>
+      </section>
     </main>
   </div>
 </template>
@@ -11,14 +14,21 @@
 <script>
 import Header from '../Comps/Header';
 import Pic from '../Comps/Pic';
+import Introduction from '../Comps/Introduction';
 
 export default {
   name: "PictureOfTheDay",
   components: {
-    Header, Pic
+    Header, Pic, Introduction
   },
   data() {
     return {
+      introduction: {
+        title: "Picture of the day",
+        paragraphs: [
+          "Each day, a different image, photograph or video of our fascinating universe is featured, along with a brief explanation written by a professional astronomer."
+        ]
+      },
       dates: [],
       oldestDate: null,
       readyToLoad: true,

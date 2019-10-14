@@ -7,11 +7,17 @@ body {
   margin: 8px 16px;
   color: var(--black);
   background: var(--white);
+  transition: background .3s, color .3s;
 }
 
 strong, header, h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Sans';
   font-weight: bold;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 48px;
 }
 
 h2 {

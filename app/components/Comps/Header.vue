@@ -1,14 +1,14 @@
 <template>
   <header>
     <div class="wrapper">
-      <a href="#" class="logo">
-        <strong>learmy</strong>
-        <p>astronomy made simple.</p>
-      </a>
+      <router-link :to="{ name: 'PictureOfTheDay' }" class="logo">
+        <dt>learmy</dt>
+        <dd>astronomy made simple.</dd>
+      </router-link>
       <nav>
         <ul>
           <li> <img @click="switchMode" class="light-dark-mode" :src="icons[darkMode]" alt="Switch Light/Dark Mode"> </li>
-          <li> <router-link to=""> EXOPLANETS </router-link> </li>
+          <li> <router-link :to="{ name: 'Exoplanets' }"> EXOPLANETS </router-link> </li>
           <li> <router-link to=""> ASTEROIDS </router-link> </li>
           <li> <router-link to=""> BLACK HOLES </router-link> </li>
           <li> <router-link to=""> THE SOLAR SYSTEM </router-link> </li>

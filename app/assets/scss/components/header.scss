@@ -19,12 +19,12 @@ header {
         transform: scale(1.025);
       }
 
-      strong {
+      dt {
+        font-weight: bold;
         font-size: 32px;
-        display: block;
       }
 
-      p {
+      dd {
         font-style: italic;
         font-weight: initial;
         font-family: 'PT Serif'

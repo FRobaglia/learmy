@@ -4,6 +4,10 @@
   .header {
     margin-bottom: 30px;
     display: flex;
+
+    h2 {
+      max-width: 70%;
+    }
     .date {
       position: relative;
       width: 30%;
@@ -13,7 +17,6 @@
         top: 5px;
         left: 0;
         font-size: 18px;
-        font-style: italic;
         text-align: center;
         font-family: 'PT Sans';
         background-color: var(--black);
