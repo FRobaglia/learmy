@@ -10,12 +10,12 @@
 
 <script>
 import Header from '../Comps/Header';
-// import Picture from '../Comps/Picture';
+import Picture from '../Comps/Picture';
 
 export default {
   name: "PictureOfTheDay",
   components: {
-    Header
+    Header, Picture
   },
   data() {
     return {
