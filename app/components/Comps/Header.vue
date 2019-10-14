@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     switchMode() {
-      let root = document.documentElement
+      const root = document.documentElement
       if (!this.darkMode) {
         this.darkMode = 1;
         root.style.setProperty('--white', "#111");

@@ -8,8 +8,10 @@
 
     <div class="content">
       <img :style="picture.explanation ? '' : 'width: 100%'" v-if="picture.media_type === 'image'" :src="picture.url" :alt="picture.title">
+
       <iframe v-if="picture.media_type === 'video'" :src="picture.url">
       </iframe>
+
       <p v-html="picture.explanation"> </p>
     </div>
     
@@ -42,7 +44,7 @@ export default {
         picture.explanation = picture.explanation.replace(def.word, `<a title="Read more about ${def.word}" target="_blank" href="${def.url}">${def.word}</a>`)
       });
 
-      let today = new Date();
+      const today = new Date();
       if (this.$parent.formatDate(today) === picture.date) {
         picture.date = "Today's picture"
       }
