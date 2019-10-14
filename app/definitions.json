@@ -1,0 +1,67 @@
+[
+  {
+    "word": "Mercury",
+    "url": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  {
+    "word": "Venus",
+    "url": "https://en.wikipedia.org/wiki/Venus"
+  },
+  {
+    "word": "Earth",
+    "url": "https://en.wikipedia.org/wiki/Earth"
+  },
+  {
+    "word": "Mars",
+    "url": "https://en.wikipedia.org/wiki/Mars"
+  },
+  {
+    "word": "Jupiter",
+    "url": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  {
+    "word": "Saturn",
+    "url": "https://en.wikipedia.org/wiki/Saturn"
+  },
+  {
+    "word": "Uranus",
+    "url": "https://en.wikipedia.org/wiki/Uranus"
+  },
+  {
+    "word": "Neptun",
+    "url": "https://en.wikipedia.org/wiki/Neptune"
+  },
+  {
+    "word": "Moon",
+    "url": "https://www.nasa.gov/moon"
+  },
+  {
+    "word": "Solar System",
+    "url": "https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
+  },
+
+
+
+  {
+    "word": "Milky Way",
+    "url": "https://exoplanets.nasa.gov/milky-way-overlay/"
+  },
+  {
+    "word": "Andromeda",
+    "url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+  },
+  {
+    "word": "galaxy",
+    "url": "https://en.wikipedia.org/wiki/Galaxy"
+  },
+
+
+  {
+    "word": "open cluster",
+    "url": "https://en.wikipedia.org/wiki/Open_cluster"
+  },
+  {
+    "word": "Hubble",
+    "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+  }
+]

@@ -19,22 +19,16 @@
 </template>
 
 <script>
+
+import definitions from '../../definitions.json';
+
 export default {
   name: "Pic",
   props: ['date'],
   data() {
     return {
       picture: null,
-      definitions: [
-        {
-          word: "Earth",
-          url: "https://en.wikipedia.org/wiki/Earth"
-        },
-        {
-          word: "Solar System",
-          url: "https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/"
-        }
-      ]
+      definitions: definitions
     }
   },
   mounted() {

@@ -51,6 +51,28 @@ header {
         li {
           line-height: 130%;
           margin: 0px 30px;
+
+          a {
+            letter-spacing: 0.08em;
+            display: inline-block;
+            padding:  0 0 4px 0;
+            position: relative;
+          }
+          a:after {    
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: var(--black);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          a:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
         }
       }
     }
@@ -81,11 +103,6 @@ header {
   
         li {
           padding: 16px;
-
-          &:nth-child(odd), &:nth-child(odd) a {
-            color: var(--white);
-            background: var(--black);
-          }
 
           &:first-child {
             padding: 0 !important;
