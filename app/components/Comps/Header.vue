@@ -27,6 +27,7 @@ import darkMode from '../../assets/images/dark.svg';
 
 
 export default {
+  name: "Header",
   data() {
     return {
       icons: [darkMode, lightMode],

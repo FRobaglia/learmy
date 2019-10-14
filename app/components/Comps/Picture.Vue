@@ -1,6 +1,6 @@
 <template>
   <article v-if="picture" class="picture">
-
+    
     <div class="header">
       <div class="date"> <span> {{ picture.date }} </span> </div>
       <h2> {{ picture.title }} </h2>
@@ -20,6 +20,8 @@
 
 <script>
 export default {
+  name: "Picture",
+  props: ['date'],
   data() {
     return {
       picture: null,
@@ -51,7 +53,6 @@ export default {
 
       this.picture = picture;
     });
-  },
-  props: ['date']
+  }
 }
 </script>
