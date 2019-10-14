@@ -7,6 +7,11 @@ header {
 
     .logo {
       display: block;
+      transition: transform .2s;
+
+      &:hover {
+        transform: scale(1.025);
+      }
 
       strong {
         font-size: 32px;
@@ -63,6 +68,7 @@ header {
     nav {
       padding-bottom: 30px;
       border-bottom: 1px solid var(--black);;
+      border-top: 1px solid var(--black);;
       ul {
         text-align: center;
         font-size: 24px;
