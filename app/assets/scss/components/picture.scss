@@ -1,6 +1,14 @@
 .picture {
   padding: 60px 0px;
   overflow: auto;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity .2s, transform .4s;
+
+  &.is-displayed {
+    opacity: 1;
+    transform: initial;
+  }
   .header {
     margin-bottom: 30px;
     display: flex;

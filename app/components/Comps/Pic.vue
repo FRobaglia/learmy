@@ -1,5 +1,5 @@
 <template>
-  <article v-if="picture" class="picture">
+  <article ref="img" v-if="picture" class="picture">
     
     <div class="header">
       <div class="date"> <span> {{ picture.date }} </span> </div>
@@ -28,7 +28,12 @@ export default {
   data() {
     return {
       picture: null,
-      definitions: definitions
+      definitions: definitions,
+      config: {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      }
     }
   },
   mounted() {
@@ -46,7 +51,26 @@ export default {
       }
 
       this.picture = picture;
+      if ('IntersectionObserver' in window) {
+      requestAnimationFrame(this.observe);
+      } else {
+        this.$refs.img.classList.add('is-displayed')
+      }
     });
+  },
+  methods: {
+    observe() {
+        let observer = new IntersectionObserver(onChange, this.config);
+        observer.observe(this.$refs.img);
+        function onChange(changes, observer) {
+          changes.forEach(change => {
+            if (change.intersectionRatio > 0) {
+              change.target.classList.add('is-displayed');
+              observer.unobserve(change.target);
+            }
+          });
+        }
+    }
   }
 }
 </script>
