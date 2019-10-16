@@ -18,7 +18,7 @@
     }
     .date {
       position: relative;
-      width: 30%;
+      width: 24.8%;
 
       span {
         position: absolute;
@@ -39,13 +39,11 @@
       line-height: 152%;
     }
     img {
-      border: 1px solid var(--black);
       object-fit: cover;
       box-sizing: initial;
       margin-left: 16px;
       margin-bottom: 16px;
-      width: 70%;
-      max-height: 650px;
+      width: 75%;
       float: right;
     }
     iframe {
@@ -79,6 +77,7 @@
       }
       h2 {
         margin-top: 10px;
+        max-width: initial;
       }
     }
     .content {

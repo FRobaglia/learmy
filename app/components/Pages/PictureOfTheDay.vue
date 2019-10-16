@@ -10,11 +10,10 @@
   </div>
 </template>
 
-
 <script>
-import Header from '../Comps/Header';
-import Pic from '../Comps/Pic';
-import Introduction from '../Comps/Introduction';
+import Header from '../childComponents/Header';
+import Pic from '../childComponents/Pic';
+import Introduction from '../childComponents/Introduction';
 
 export default {
   name: "PictureOfTheDay",

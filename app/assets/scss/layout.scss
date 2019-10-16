@@ -17,7 +17,7 @@ strong, header, h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin: 30px 0;
-  font-size: 48px;
+  font-size: 56px;
 }
 
 h2 {
@@ -51,4 +51,10 @@ main {
 
 p {
   line-height: 120%;
+}
+
+@media (max-width: 920px) {
+  h1 {
+      font-size: 40px;
+  }
 }
