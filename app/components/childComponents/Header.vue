@@ -9,10 +9,10 @@
         <ul>
           <li> <img @click="switchMode" class="light-dark-mode" :src="icons[darkMode]" alt="Switch Light/Dark Mode"> </li>
           <li> <router-link :to="{ name: 'Exoplanets' }"> EXOPLANETS </router-link> </li>
-          <li> <router-link to=""> ASTEROIDS </router-link> </li>
-          <li> <router-link to=""> BLACK HOLES </router-link> </li>
-          <li> <router-link to=""> THE SOLAR SYSTEM </router-link> </li>
-          <li> <router-link to=""> DISTANCES IN SPACE </router-link> </li>
+          <li> <router-link class="soon" to=""> ASTEROIDS </router-link> </li>
+          <li> <router-link class="soon" to=""> BLACK HOLES </router-link> </li>
+          <li> <router-link class="soon" to=""> THE SOLAR SYSTEM </router-link> </li>
+          <li> <router-link class="soon" to=""> DISTANCES IN SPACE </router-link> </li>
         </ul>
       </nav>
     </div>

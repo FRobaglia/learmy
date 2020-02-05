@@ -5,6 +5,23 @@
 }
 
 header {
+
+  .soon {
+    position: relative;
+    &::before {
+      font-family: 'PT Serif';
+      white-space: nowrap;
+      content: "Coming soon !";
+      font-size: 10px;
+      letter-spacing: normal;
+      font-style: italic;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   .wrapper {
     max-width: 1920px;
     margin: 0 auto;
